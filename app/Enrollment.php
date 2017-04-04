@@ -28,7 +28,7 @@ class Enrollment extends Model implements StatefulInterface
      * @var array
      */
     protected $states = [
-        'step1' => ['inital' => true],
+        'step1' => ['initial' => true],
         'step2' => ['final' => true]
     ];
 

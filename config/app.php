@@ -172,6 +172,7 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Spatie\Menu\Laravel\MenuServiceProvider::class,
+        Acacha\Stateful\Providers\StatefulServiceProvider::class,
         #llum_providers
 
         /*
@@ -187,6 +188,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
 
     ],
 
