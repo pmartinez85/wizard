@@ -6,31 +6,33 @@
 
 
 @section('main-content')
-	<div class="container-fluid spark-screen">
-		<div class="row">
-			<div class="col-md-9 col-md-offset-1">
-
-                <div class="nav-tabs-custom">
-                <h3>Matrícula!</h3>
-
+    <div class="container-fluid spark-screen">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="progress progress-sm active">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                        <span class="sr-only">20% Complete</span>
+                    </div>
+                </div>
+                <h4>Matrícula</h4>
                 <wizard>
-                    <wizard-step title="Usuari">
-                        Step 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, voluptate.
+                    <wizard-step title="Usuari" active="true">
+                        <enrollment-form-user></enrollment-form-user>
                     </wizard-step>
-                    <wizard-step title="Dades Personals">
-                        Step 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsum laborum numquam recusandae rem!
+                    <wizard-step title="Dades personals">
+                        Step 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur dicta dolorum ducimus, impedit, in incidunt ipsa itaque, maiores nulla quaerat quam quod repellendus repudiandae velit. Aliquid deleniti eos magni?
                     </wizard-step>
-                    <wizard-step title="Estudi i Curs">
-                        Step 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, nisi?
+                    <wizard-step title="Estudis i curs">
+                        Step 3: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum ipsum natus, quo suscipit veritatis voluptas! Delectus distinctio eligendi impedit, maxime, mollitia nesciunt quae, quo reiciendis soluta tempore vero voluptatibus!
                     </wizard-step>
                     <wizard-step title="Moduls professionals">
-                        Step 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, nisi?
+                        Step 4: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias facere ipsa laudantium libero necessitatibus sed, vitae voluptatem. Deleniti harum laborum laudantium maxime nam ratione rem repellat reprehenderit sit suscipit!
                     </wizard-step>
-                    <wizard-step title="Unitat Formatives">
-                        Step 5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, nisi?
+                    <wizard-step title="Unitats formatives">
+                        Step 5: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor eum harum non nulla. Beatae iusto nulla, officiis perferendis porro quam unde. Eligendi, est officiis. Possimus, praesentium voluptate? Dignissimos, quisquam?
                     </wizard-step>
                 </wizard>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 @endsection

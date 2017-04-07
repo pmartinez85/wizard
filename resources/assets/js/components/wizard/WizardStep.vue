@@ -6,18 +6,18 @@
 
 <script>
     import voca from 'voca'
-    import {store} from './Store'
+    import {state,store} from './Store'
+
     export default {
     data(){
-            return{
-                steps: [],
-                currentStep: store.currentStep
+           return {
+            state: state
             }
         },
         props: {
             title:{
                 type: String,
-                required: true
+                require: true
             },
             active:{
                 type:[Boolean, String],
@@ -26,7 +26,7 @@
         },
         computed: {
         isActive: function (){
-            return this.currentStep == this.id
+            return this.currentStep === this.id
          },
          id: function () {
                 return voca.latinise(voca.camelCase(this.title))
